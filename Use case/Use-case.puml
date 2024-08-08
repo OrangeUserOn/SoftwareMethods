@@ -1,0 +1,23 @@
+@startuml
+
+ACTOR User
+
+
+RECTANGLE Website {
+  USECASE "Access Website" as UC1
+  USECASE "Select Information to Display" as UC2
+  USECASE "Display Information" as UC3
+}
+
+rectangle R1 as "Database"
+
+User -- UC1
+User -- UC2
+User -- UC3
+
+UC1 -- UC2 : <<include>>
+UC2 -- UC3 : <<include>>
+UC2 -- R1 : <<include>>
+
+
+@enduml
