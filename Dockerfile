@@ -1,4 +1,4 @@
 FROM openjdk:latest
-COPY ./target/seMethods-0.1.0.1-jar-with-dependencies.jar /tmp
+COPY ./target/SoftwareMethodsAssignment-1.0-SNAPSHOT-jar-with-dependencies /tmp
 WORKDIR /tmp
-ENTRYPOINT ["java", "-jar", "seMethods-0.1.0.1-jar-with-dependencies.jar"]
+ENTRYPOINT ["java", "-jar", "SoftwareMethodsAssignment-1.0-SNAPSHOT-jar-with-dependencies"]
