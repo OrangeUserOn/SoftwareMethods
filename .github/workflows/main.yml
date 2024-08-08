@@ -18,6 +18,6 @@ jobs:
       - name: Build
         run: docker build -t SoftwareMethodsAssignment .
       - name: Run image
-        run: docker run --network SoftwareMethodsAssignment --name semcontainer se_methods
+        run: docker run --network SoftwareMethodsAssignment --name semcontainer SoftwareMethodsAssignment
       - name: view logs
         run: docker logs semcontainer
