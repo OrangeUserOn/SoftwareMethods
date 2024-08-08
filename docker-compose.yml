@@ -4,7 +4,7 @@ services:
   app:
     build: .
 
-  # database is is database folder
+  # database is in database folder
   database:
     build: database/.
     ports:
