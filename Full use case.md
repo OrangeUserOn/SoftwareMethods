@@ -4,6 +4,10 @@
 
 Display the information that the user wishes to see within a website accessing a SQL database
 
+**Scope:**
+
+Website
+
 **Level:**
 
 Primary task
