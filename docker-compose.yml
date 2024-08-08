@@ -2,11 +2,13 @@ version: '3'
 services:
   # Application Dockerfile is in same folder which is .
   app:
+    ports:
+      - "3322:3323"
     build: .
 
   # database is in database folder
   database:
     build: database/.
     ports:
-      - "4000:4000"
+      - "3320:3321"
     restart: always
